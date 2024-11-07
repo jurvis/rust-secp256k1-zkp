@@ -41,7 +41,7 @@ impl fmt::Display for FrostError {
     }
 }
 
-#[derive(Debug, Eq, PartialEq)]
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub struct FrostSecretNonce(ffi::FrostSecretNonce);
 
 impl CPtr for FrostSecretNonce {
